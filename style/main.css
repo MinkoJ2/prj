@@ -1,0 +1,123 @@
+* {
+	outline: none;
+}
+
+.icon {
+	width: 32px;
+	height: 32px;
+}
+
+.inline-list li{
+	display: inline-block;
+}
+
+#sizeTextDiv {
+	color: black;
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 4.6%;
+}
+
+#sizeTextDiv .w3-button{
+	margin: 26px;
+	padding: 7px 26px;
+}
+
+#sizeTextDiv h2{
+	margin: 0;
+}
+
+#courses span {
+	width: 33.33%;
+	padding: 70px 30px;
+	display: inline-block;
+	text-align: center;
+}
+
+#courses span h2:hover {
+	text-decoration: underline;
+	text-decoration-color: blue;
+}
+
+footer {
+	height: 36x0px;
+	background: #282828;
+	text-align: center;
+	color: white;
+}
+
+footer ul {
+	vertical-align: top;
+	list-style: none;
+	display: inline-block;
+	width: 15%;
+	margin-top: 2%;
+	text-align: left;
+}
+
+footer li {	margin-bottom: 20px;
+	font-size: 15px;
+}
+
+footer ul a {
+	color: #757575;
+}
+
+footer ul a:hover {
+	color: white;
+}
+
+.copyright {
+	font-size: 12px;
+	padding: 0;
+}
+
+.copyright a{
+	color: white;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.m-select {
+	color: white;
+	margin-top: 17%;
+	height: 20px;
+	width: 150px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid lightgrey; 
+}
+
+.m-select option {
+	color: black;
+}
+
+@media (max-width: 768px) {
+	.hide {
+		display: none;
+	}
+	#sizeImgDiv img{
+		width: 100%;
+	}
+	#courses span {
+	border-bottom: 1px solid lightgray;
+	padding: 20px 30px;
+	}
+	footer ul{
+		text-align: center;
+		width: 49%;
+	}
+	.m-select {
+		margin-top: 5%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.inline-list {
+		left: 10%;
+	}
+	#sizeImgDiv img{
+		width: 75%;
+		float: left;
+	}
+}
