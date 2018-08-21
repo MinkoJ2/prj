@@ -2,6 +2,14 @@
 	outline: none;
 }
 
+.n-section {
+	font-size: 36px;
+}
+
+.active-url {
+	/* none */
+}
+
 .icon {
 	width: 32px;
 	height: 32px;
@@ -110,6 +118,12 @@ footer ul a:hover {
 	.m-select {
 		margin-top: 5%;
 	}
+	#menu {
+		display: none;
+	}
+	.m-vm {
+		display: none;
+	}
 }
 
 @media (min-width: 1024px) {
@@ -120,4 +134,61 @@ footer ul a:hover {
 		width: 75%;
 		float: left;
 	}
+}
+
+#Filters {
+	background: lightgrey;
+}
+
+.m-vm {
+	width: 25%;
+	float: left;
+}
+
+.m-courses {
+	width: 60%;
+	margin-right: 9%;
+	float: right;
+}
+
+.m-courses-menu {
+	list-style: none;
+}
+
+.m-course-card {
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 48%;
+	background: white;
+}
+
+.m-course-card-o {
+	color: #111;
+	border-bottom: 1px solid lightgrey;
+}
+
+.img-text {
+	margin-right: 16px;
+	margin-bottom: 70px;
+	float: left;
+}
+
+.m-course-card img {
+	width: 65px;
+	height: 65px;
+}
+
+.course-card-text a {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.course-card-text a:hover {
+	text-decoration: underline;
+}
+
+.c-card-list li{
+	display: inline-block;
+	margin-bottom: 15px;
+	list-style: none;
 }
