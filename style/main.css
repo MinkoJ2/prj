@@ -7,7 +7,7 @@
 }
 
 .active-url {
-	/* none */
+	border-bottom: 1px solid blue;
 }
 
 .icon {
@@ -104,25 +104,46 @@ footer ul a:hover {
 	.hide {
 		display: none;
 	}
+
 	#sizeImgDiv img{
 		width: 100%;
 	}
+
 	#courses span {
 	border-bottom: 1px solid lightgray;
 	padding: 20px 30px;
 	}
+
 	footer ul{
 		text-align: center;
 		width: 49%;
 	}
+
 	.m-select {
 		margin-top: 5%;
 	}
+
 	#menu {
 		display: none;
 	}
-	.m-vm {
+
+	.m-filters {
 		display: none;
+	}
+
+	.m-c-cont {
+		width: 100%;
+	}
+
+	.m-c-l{
+		text-align: center;
+	}	
+
+	.m-c-card {
+	padding: 10px;
+	list-style: none;
+	height: auto;
+	background: white;
 	}
 }
 
@@ -134,61 +155,67 @@ footer ul a:hover {
 		width: 75%;
 		float: left;
 	}
+	.m-filters {
+		float: left;
+		margin-left: 3%;
+		margin-right: 3%;
+		width: 30%;
+	}
+	.m-c-cont {
+		display: inline-block;
+		width: 60%;
+	}
+	.m-c-l-right {
+		float: right;
+	}
+
+	.m-c-card {
+	border-radius: 2px;
+	padding: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+	list-style: none;
+	width: 49.5%;
+	height: auto;
+	background: white;
+}
 }
 
-#Filters {
+#content {
 	background: lightgrey;
 }
 
-.m-vm {
-	width: 25%;
-	float: left;
+.m-filters {
+	width: 20%;
+	height: 460px;
 }
 
-.m-courses {
-	width: 60%;
-	margin-right: 9%;
+.m-c-l li{
+	margin-right: 2%;
+	display: inline-block;
+	color: black;
+}
+
+.m-c-card img {
+	width: 20%;
+	float: left;
+	margin-right: 10px;
+}
+
+.m-c-card span{
+	width: 76%;
 	float: right;
 }
 
-.m-courses-menu {
-	list-style: none;
-}
-
-.m-course-card {
-	margin-bottom: 10px;
-	padding: 10px;
-	width: 48%;
-	background: white;
-}
-
-.m-course-card-o {
-	color: #111;
-	border-bottom: 1px solid lightgrey;
-}
-
-.img-text {
-	margin-right: 16px;
-	margin-bottom: 70px;
-	float: left;
-}
-
-.m-course-card img {
-	width: 65px;
-	height: 65px;
-}
-
-.course-card-text a {
-	font-size: 16px;
+.m-c-card a {
+	color: black;
 	font-weight: 500;
 }
 
-.course-card-text a:hover {
+.m-c-card a:hover {
 	text-decoration: underline;
 }
 
-.c-card-list li{
-	display: inline-block;
-	margin-bottom: 15px;
-	list-style: none;
+.m-c-header {
+	text-align: left;
 }

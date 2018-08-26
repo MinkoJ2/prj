@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>After</title>
+	<title>Каталог</title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style/w3.css">
 	<link rel="stylesheet" type="text/css" href="style/main.css">
@@ -10,18 +10,24 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 </head>
 <body>
-	<header class="w3-container">
+	<header>
 		<div id="h-1" class="w3-display-container w3-bar w3-border-bottom w3-border-light-grey"
 		style="height: 63px;">
 			<a href="" class="w3-display-left" style="left: 2%"><img src="img/yt_icon_rgb_64_1.png"></a>
 			<span class="w3-display-right" style="right: 5%; text-transform: uppercase;color: #e62117;font-weight: 500;"><a href="" class="">Войти</a></span>
 		</div>
 		<div class="h-2 w3-display-container w3-bar w3-border-bottom w3-border-light-grey" style="height: 64px">
-			<a href="" class="w3-display-left hide" style="left: 2%"><h3>Academy</h3></a>
+			<a href="index.html" class="w3-display-left hide" style="left: 2%"><h3>Academy</h3></a>
 			<ul class="inline-list w3-display-left w3-mobile">
-				<li><a href="" class="w3-bar-item w3-mobile">Мой профиль</a></li>
-				<li><a href="" class="w3-bar-item w3-mobile active-url">Каталог</a></li>
-				<li><a href="" class="w3-bar-item w3-mobile">О сервисе</a></li>
+				<li>
+					<a href="index.html" class="w3-bar-item w3-mobile">Мой профиль</a>
+				</li>
+				<li class="active-url">
+					<a href="#" class="w3-bar-item w3-mobile">Каталог</a>
+				</li>
+				<li>
+					<a href="#" class="w3-bar-item w3-mobile">О сервисе</a>
+				</li>
 			</ul>
 			<div class="hide">
 				<input type="search" class="w3-bar-item w3-display-middle " placeholder="Поиск по академии для авторов"
@@ -30,95 +36,50 @@
 			<span class="w3-dropdown-hover w3-display-right" style="right: 5%;"><i class="material-icons">&#xe5c3;</i></span>
 		</div>
 	</header>
-	<section id="Filters" class="w3-container">
-			<div class="w3-sidebar w3-red m-vm">
-				<span class="n-section">FILTERS</span>
+	<section id="content" class="w3-container">
+		<div class="m-filters w3-white">
+			FILTERS
+		</div>
+		<div class="m-c-cont">
+			<ul class="m-c-l">
+				<li><h5>Все курсы</h5></li>
+				<li class="m-c-l-right"><h5>Кнопка</h5></li>
+			</ul>
+			<div class="m-c-card w3-left">
+					<img src="img/icon_120X120_getetting_started.png" alt="">
+					<span>
+						<a href="course.html">С чего начать?</a>
+						<p>Недавно создали канал? Пройдите этот курс и узнайте, как добиться успеха на YouTube.Войдите в свой аккаунт, изучите все доступные уроки, а затем сдайте итоговый тест. Необходимо правильно ответить как минимум на 75% вопросов.
+						</p>
+					</span>				
 			</div>
-			<div class="m-courses">
-				<div class="m-courses-menu w3-container">
-					<span class="w3-left"><h3>Все курсы</h3></span>
-					<span class="w3-right"><h4>Кнопка</h4></span>
-				</div>
-				<!--
-				<div class="m-course-card w3-container w3-round">
-					<div class="m-course-card-o">
-						<span class="img-text"><img src="img/icon_120X120_getetting_started.png" alt=""></span>
-						<span class="course-card-text">
-							<a href="">С чего начать?</a>
-							<p>Недавно создали канал? Пройдите этот курс и узнайте, как добиться успеха на YouTube.
-							Войдите в свой аккаунт, изучите все доступные уроки, а затем сдайте итоговый тест. Необходимо правильно ответить как </p>
-						</span>
-					</div>
-					<div class="w3-container" style="padding: 5px;">
-						<span class="w3-left">5 уроков</span>
-						<span style="margin-left: 10%;">2 часа</span>
-						<span class="w3-right">Подробнее</span>
-					</div>
-				</div>
-			-->
-			<div class="m-course-card w3-container w3-round w3-left">
-					<div class="m-course-card-o">
-						<span class="img-text"><img src="img/icon_120X120_getetting_started.png" alt=""></span>
-						<span class="course-card-text">
-							<a href="">С чего начать?</a>
-							<p>Недавно создали канал? Пройдите этот курс и узнайте, как добиться успеха на YouTube.
-							Войдите в свой аккаунт, изучите все доступные уроки, а затем сдайте итоговый тест. Необходимо правильно ответить как </p>
-						</span>
-					</div>
-					<div class="w3-container" style="padding: 5px;">
-						<span class="w3-left">5 уроков</span>
-						<span style="margin-left: 10%;">2 часа</span>
-						<span class="w3-right">Подробнее</span>
-					</div>
-				</div>
-				<div class="m-course-card w3-container w3-round w3-right">
-					<div class="m-course-card-o">
-						<span class="img-text"><img src="img/icon_120X120_getetting_started.png" alt=""></span>
-						<span class="course-card-text">
-							<a href="">С чего начать?</a>
-							<p>Недавно создали канал? Пройдите этот курс и узнайте, как добиться успеха на YouTube.
-							Войдите в свой аккаунт, изучите все доступные уроки, а затем сдайте итоговый тест. Необходимо правильно ответить как </p>
-						</span>
-					</div>
-					<div class="w3-container" style="padding: 5px;">
-						<span class="w3-left">5 уроков</span>
-						<span style="margin-left: 10%;">2 часа</span>
-						<span class="w3-right">Подробнее</span>
-					</div>
-				</div>
-							<div class="m-course-card w3-container w3-round w3-left">
-					<div class="m-course-card-o">
-						<span class="img-text"><img src="img/icon_120X120_getetting_started.png" alt=""></span>
-						<span class="course-card-text">
-							<a href="">С чего начать?</a>
-							<p>Недавно создали канал? Пройдите этот курс и узнайте, как добиться успеха на YouTube.
-							Войдите в свой аккаунт, изучите все доступные уроки, а затем сдайте итоговый тест. Необходимо правильно ответить как </p>
-						</span>
-					</div>
-					<div class="w3-container" style="padding: 5px;">
-						<span class="w3-left">5 уроков</span>
-						<span style="margin-left: 10%;">2 часа</span>
-						<span class="w3-right">Подробнее</span>
-					</div>
-				</div>
-				<div class="m-course-card w3-container w3-round w3-right">
-					<div class="m-course-card-o">
-						<span class="img-text"><img src="img/icon_120X120_getetting_started.png" alt=""></span>
-						<span class="course-card-text">
-							<a href="">С чего начать?</a>
-							<p>Недавно создали канал? Пройдите этот курс и узнайте, как добиться успеха на YouTube.
-							Войдите в свой аккаунт, изучите все доступные уроки, а затем сдайте итоговый тест. Необходимо правильно ответить как </p>
-						</span>
-					</div>
-					<div class="w3-container" style="padding: 5px;">
-						<span class="w3-left">5 уроков</span>
-						<span style="margin-left: 10%;">2 часа</span>
-						<span class="w3-right">Подробнее</span>
-					</div>
-				</div>
+			<div class="m-c-card w3-right">
+					<img src="img/icon_120X120_getetting_started.png" alt="">
+					<span>
+						<a href="">С чего начать?</a>
+						<p>Недавно создали канал? Пройдите этот курс и узнайте, как добиться успеха на YouTube.Войдите в свой аккаунт, изучите все доступные уроки, а затем сдайте итоговый тест. Необходимо правильно ответить как минимум на 75% вопросов.
+						</p>
+					</span>				
 			</div>
+			<div class="m-c-card w3-left">
+					<img src="img/icon_120X120_getetting_started.png" alt="">
+					<span>
+						<a href="">С чего начать?</a>
+						<p>Недавно создали канал? Пройдите этот курс и узнайте, как добиться успеха на YouTube.Войдите в свой аккаунт, изучите все доступные уроки, а затем сдайте итоговый тест. Необходимо правильно ответить как минимум на 75% вопросов.
+						</p>
+					</span>				
+			</div>
+			<div class="m-c-card w3-right">
+					<img src="img/icon_120X120_getetting_started.png" alt="">
+					<span>
+						<a href="">С чего начать?</a>
+						<p>Недавно создали канал? Пройдите этот курс и узнайте, как добиться успеха на YouTube.Войдите в свой аккаунт, изучите все доступные уроки, а затем сдайте итоговый тест. Необходимо правильно ответить как минимум на 75% вопросов.
+						</p>
+					</span>				
+			</div>
+		</div>
 	</section>
-	<footer class="w3-container">
+	<footer>
 		<ul>
 			<img src="img/yt_white.png">
 		</ul>
