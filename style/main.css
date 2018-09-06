@@ -1,221 +1,196 @@
 * {
-	outline: none;
+	color: #757575;
+	text-decoration: none;
 }
 
-.n-section {
-	font-size: 36px;
+html {
+	min-height: 100%;
 }
 
-.active-url {
-	border-bottom: 1px solid blue;
+input {outline:none;}
+
+/* Header */
+header {
+	display: table;
+	}
+
+@media screen and (max-width: 960px) {
+	.hide {
+	display: none;
+	}
+	.menu li {
+		margin-left: 10px;
+	}
 }
 
-.icon {
-	width: 32px;
-	height: 32px;
+/* First div in header */
+.logo {
+	list-style: none;
+	padding-left: 0;
 }
 
-.inline-list li{
-	display: inline-block;
+.logo li {
+	display: inline;
 }
 
-#sizeTextDiv {
+.logo img {
+	width: 2%;
+	margin-bottom: 0.5%;
+}
+
+#l-title {
 	color: black;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+#l-text {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+#l-button {
+	margin-top: 0.5%;
+	font-size: 14px;
+	font-weight: 600;
+	float: right;
+	text-transform: uppercase;
+	color: #e62117;
+}
+/* End first div in header */
+
+/* Second div in header */
+.menu {
+	padding-left: 0;
+	list-style: none;
+}
+
+.menu li {
+	display: inline-block;
+	margin-right: 1%;
+}
+
+#m-logo {
+	font-size: 24px;
+	font-weight: 300;
+	margin-right: 2%;
+}
+
+.m-search {
+	color: black;
+	margin-left: 40%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 10%;
+	border: none;
+	background: #eee;
+	width: 200%
+}
+/* End second div in header */
+/* End header */
+
+/* Section  authorization */
+#authorization img {
+	display: inline-block;
+	width: 70%;
+}
+
+.a-card {
+	display: inline-block;
+	float: right;
+	width: 30%;
+	text-align: center;
+	color: black;
+	font-size: 2.5em;
+	font-weight: 300;
+	background: white;
+}
+
+#a-button {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+@media only screen and (min-width:83.3em) { 
+	/* CSS rules here */
+	.a-card {
+		padding-top: 7%;
+	}
+}
+@media (max-width: 600px) {
+	.a-card {
+		padding: 5% 0;
+	}
+}
+/* End authorization */
+
+/* Section tips */
+
+#tips {
+	background-color: #f5f5f5;
 	text-align: center;
 	padding-top: 5%;
-	padding-bottom: 4.6%;
+	padding-bottom: 5%;
 }
 
-#sizeTextDiv .w3-button{
-	margin: 26px;
-	padding: 7px 26px;
-}
-
-#sizeTextDiv h2{
-	margin: 0;
-}
-
-#courses span {
-	width: 33.33%;
-	padding: 70px 30px;
+#tips span {
+	vertical-align: top;
 	display: inline-block;
-	text-align: center;
+	color: black;
+	font-size: 32px;
+	font-weight: 300;
+	width: 30%;
 }
 
-#courses span h2:hover {
-	text-decoration: underline;
-	text-decoration-color: blue;
+#tips p {
+	font-size: 14px;
+	font-weight: 400;
+	color: black;
 }
 
+/* End tips */
+
+/* Footer */
 footer {
-	height: 36x0px;
 	background: #282828;
-	text-align: center;
-	color: white;
+	padding: 48px 24px;
 }
 
-footer ul {
+.f-position {
+	margin-left: 20%;
+}
+
+.f-menu {
+	height: 60%;
+	display: inline-block;
 	vertical-align: top;
 	list-style: none;
+	margin-right: 4%;
+}
+
+.f-menu li {
+	font-size: 14px
+	color: grey;
+	padding-top: 10%;
+}
+
+#f-t-h {
 	display: inline-block;
-	width: 15%;
-	margin-top: 2%;
-	text-align: left;
-}
-
-footer li {	margin-bottom: 20px;
-	font-size: 15px;
-}
-
-footer ul a {
-	color: #757575;
-}
-
-footer ul a:hover {
 	color: white;
-}
-
-.copyright {
-	font-size: 12px;
-	padding: 0;
-}
-
-.copyright a{
-	color: white;
-	font-weight: 500;
-	text-transform: uppercase;
-}
-
-.m-select {
-	color: white;
-	margin-top: 17%;
-	height: 20px;
-	width: 150px;
-	background: none;
-	border: none;
-	border-bottom: 1px solid lightgrey; 
-}
-
-.m-select option {
-	color: black;
-}
-
-@media (max-width: 768px) {
-	.hide {
-		display: none;
-	}
-
-	#sizeImgDiv img{
-		width: 100%;
-	}
-
-	#courses span {
-	border-bottom: 1px solid lightgray;
-	padding: 20px 30px;
-	}
-
-	footer ul{
-		text-align: center;
-		width: 49%;
-	}
-
-	.m-select {
-		margin-top: 5%;
-	}
-
-	#menu {
-		display: none;
-	}
-
-	.m-filters {
-		display: none;
-	}
-
-	.m-c-cont {
-		width: 100%;
-	}
-
-	.m-c-l{
-		text-align: center;
-	}	
-
-	.m-c-card {
-	padding: 10px;
-	list-style: none;
-	height: auto;
-	background: white;
-	}
-}
-
-@media (min-width: 1024px) {
-	.inline-list {
-		left: 10%;
-	}
-	#sizeImgDiv img{
-		width: 75%;
-		float: left;
-	}
-	.m-filters {
-		float: left;
-		margin-left: 3%;
-		margin-right: 3%;
-		width: 30%;
-	}
-	.m-c-cont {
-		display: inline-block;
-		width: 60%;
-	}
-	.m-c-l-right {
-		float: right;
-	}
-
-	.m-c-card {
-	border-radius: 2px;
-	padding: 10px;
-	margin-bottom: 10px;
-	display: inline-block;
-	list-style: none;
-	width: 49.5%;
-	height: auto;
-	background: white;
-}
-}
-
-#content {
-	background: lightgrey;
-}
-
-.m-filters {
-	width: 20%;
-	height: 460px;
-}
-
-.m-c-l li{
-	margin-right: 2%;
-	display: inline-block;
-	color: black;
-}
-
-.m-c-card img {
-	width: 20%;
-	float: left;
-	margin-right: 10px;
-}
-
-.m-c-card span{
-	width: 76%;
-	float: right;
-}
-
-.m-c-card a {
-	color: black;
+	font-size: 16px;
 	font-weight: 500;
 }
 
-.m-c-card a:hover {
-	text-decoration: underline;
+#f-title {
+	color: white;
+	font-size: 20px
 }
 
-.m-c-header {
-	text-align: left;
+#f-title img {
+	margin-right: 5px;
 }
+
+#f-last {
+	width: 200px;
+}
+/* End footer */
