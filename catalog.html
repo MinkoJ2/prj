@@ -22,9 +22,9 @@
 		<div class="w3-border-bottom w3-container">
 			<ul class="menu">
 				<li id="m-logo"><a href="index.html" class="hide">Academy</a></li>
-				<li><a href="#">Мой профиль</a></li>
-				<li><a href="#">Каталог</a></li>
-				<li><a href="#">О сервисе</a></li>
+				<li><a href="error-404.html">Мой профиль</a></li>
+				<li><a href="">Каталог</a></li>
+				<li><a href="error-404.html">О сервисе</a></li>
 				<li>
 					<input type="text" class="m-search w3-bar-item hide" placeholder="Поиск по академии">
 				</li>
@@ -33,96 +33,134 @@
 		</div>
 	</header>
     <section id="catalog" class="">
-        <div class="c-menu hide">
-               <span class="c-t-title">Упорядочить по:</span>
-                <div class="control-group c-t-list">
+        <div class="c-menu w3-mobile">
+            <button class="accordion">Упорядочнить по:</button>
+            <div class="panel">
+              <ul class="filters">
+                  <li>
                     <label class="control control-radio">
-                            По алфавиту
-                            <input type="radio" name="radio" />
+                        По алфавиту
+                        <input type="radio" name="sort" />
                         <div class="control_indicator"></div>
                     </label>
+                  </li>
+                  <li>
                     <label class="control control-radio">
-                        Длительности
-                            <input type="radio" name="regulate" />
+                        Длительность
+                        <input type="radio" name="sort" />
                         <div class="control_indicator"></div>
                     </label>
+                  </li>
+                  <li>
                     <label class="control control-radio">
-                        Не давно добавленные
-                            <input type="radio" name="regulate" />
+                        Недавно добавленные
+                        <input type="radio" name="sort" />
                         <div class="control_indicator"></div>
                     </label>
+                  </li>
+                  <li>
                     <label class="control control-radio">
                         Популярности
-                            <input type="radio" name="regulate" />
+                        <input type="radio" name="sort" />
                         <div class="control_indicator"></div>
                     </label>
-                </div>
-                <span class="c-t-title">Категории:</span>
-                <div class="control-group c-t-list">
+                  </li>
+              </ul>
+            </div>
+            <button class="accordion">Категории:</button>
+            <div class="panel">
+              <ul class="filters">
+                  <li>
                     <label class="control control-radio">
-                            Аудитория
-                            <input type="radio" name="categories" />
+                        Аудитория
+                        <input type="radio" name="category" />
                         <div class="control_indicator"></div>
                     </label>
+                  </li>
+                  <li>
                     <label class="control control-radio">
                         Заработок на YouTube
-                            <input type="radio" name="categories" />
+                        <input type="radio" name="category" />
                         <div class="control_indicator"></div>
                     </label>
+                  </li>
+                  <li>
                     <label class="control control-radio">
                         Инструменты YouTube и YouTube Analytics
-                            <input type="radio" name="categories" />
+                        <input type="radio" name="category" />
                         <div class="control_indicator"></div>
                     </label>
+                  </li>
+                  <li>
                     <label class="control control-radio">
                         Контент
-                            <input type="radio" name="categories" />
+                        <input type="radio" name="category" />
                         <div class="control_indicator"></div>
                     </label>
+                  </li>
+                  <li>
                     <label class="control control-radio">
                         Маркетинг и продвижение контента
-                            <input type="radio" name="categories" />
+                        <input type="radio" name="category" />
                         <div class="control_indicator"></div>
                     </label>
+                  </li>
+                  <li>
                     <label class="control control-radio">
                         Обнаружение видео и время просмотра
-                            <input type="radio" name="categories" />
+                        <input type="radio" name="category" />
                         <div class="control_indicator"></div>
                     </label>
+                  </li>
+                  <li>
                     <label class="control control-radio">
                         Первые шаги
-                            <input type="radio" name="categories" />
+                        <input type="radio" name="category" />
                         <div class="control_indicator"></div>
                     </label>
+                  </li>
+                  <li>
                     <label class="control control-radio">
                         Развитие бизнеса
-                            <input type="radio" name="categories" />
+                        <input type="radio" name="category" />
                         <div class="control_indicator"></div>
                     </label>
+                  </li>
+                  <li>
                     <label class="control control-radio">
                         Создание видео
-                            <input type="radio" name="categories" />
+                        <input type="radio" name="category" />
                         <div class="control_indicator"></div>
                     </label>
-                </div>
-                <span class="c-t-title">Сложность:</span>
-                <div class="control-group c-t-list">
+                  </li>
+              </ul>
+            </div>
+            <button class="accordion">Сложности:</button>
+            <div class="panel">
+              <ul class="filters">
+                  <li>
                     <label class="control control-radio">
-                            Начальный уровень
-                            <input type="radio" name="lvl" />
+                        Начальный уровень
+                        <input type="radio" name="complexity" />
                         <div class="control_indicator"></div>
                     </label>
+                  </li>
+                  <li>
                     <label class="control control-radio">
                         Средний уровень
-                            <input type="radio" name="lvl" />
+                        <input type="radio" name="complexity" />
                         <div class="control_indicator"></div>
                     </label>
+                  </li>
+                  <li>
                     <label class="control control-radio">
-                       Продвинутый уровень
-                            <input type="radio" name="lvl" />
+                        Продвинутый уровень
+                        <input type="radio" name="complexity" />
                         <div class="control_indicator"></div>
                     </label>
-                </div>
+                  </li>
+              </ul>
+            </div>
         </div>
         <div class="c-content w3-mobile ">
             <ul class="c-c-header">
@@ -133,7 +171,7 @@
                 <div class="course-card w3-border-bottom">
                    <img src="img/icon/getting-start.png" alt="">
                     <span id="text">
-                        <a href="">С чего начать</a>
+                        <a href="lesson/bootcamp-foundations.html">С чего начать</a>
                         <p>Недавно создали канал? Пройдите этот курс и узнайте, как добиться успеха на YouTube.
                         Войдите в свой аккаунт, изучите все доступные уроки, а затем сдайте итоговый тест. Необходимо правильно ответить как минимум на 75% вопросов.
                         </p>
@@ -147,75 +185,10 @@
             </div>
             <div class="course w3-container w3-display-container w3-round w3-mobile">
                 <div class="course-card w3-border-bottom">
-                   <img src="img/icon/getting-start.png" alt="">
+                   <img src="img/icon/get-discovered.png" alt="">
                     <span id="text">
-                        <a href="">С чего начать</a>
-                        <p>Недавно создали канал? Пройдите этот курс и узнайте, как добиться успеха на YouTube.
-                        Войдите в свой аккаунт, изучите все доступные уроки, а затем сдайте итоговый тест. Необходимо правильно ответить как минимум на 75% вопросов.
-                        </p>
-                    </span>
-                </div>
-                <ul class="course-card-inf">
-                    <li>5 уроков</li>
-                    <li>2 часа</li>
-                    <li id="last">Подробнее</li>
-                </ul>
-            </div>
-            <div class="course w3-container w3-display-container w3-round w3-mobile">
-                <div class="course-card w3-border-bottom">
-                   <img src="img/icon/getting-start.png" alt="">
-                    <span id="text">
-                        <a href="">С чего начать</a>
-                        <p>Недавно создали канал? Пройдите этот курс и узнайте, как добиться успеха на YouTube.
-                        Войдите в свой аккаунт, изучите все доступные уроки, а затем сдайте итоговый тест. Необходимо правильно ответить как минимум на 75% вопросов.
-                        </p>
-                    </span>
-                </div>
-                <ul class="course-card-inf">
-                    <li>5 уроков</li>
-                    <li>2 часа</li>
-                    <li id="last">Подробнее</li>
-                </ul>
-            </div>
-            <div class="course w3-container w3-display-container w3-round w3-mobile">
-                <div class="course-card w3-border-bottom">
-                   <img src="img/icon/getting-start.png" alt="">
-                    <span id="text">
-                        <a href="">С чего начать</a>
-                        <p>Недавно создали канал? Пройдите этот курс и узнайте, как добиться успеха на YouTube.
-                        Войдите в свой аккаунт, изучите все доступные уроки, а затем сдайте итоговый тест. Необходимо правильно ответить как минимум на 75% вопросов.
-                        </p>
-                    </span>
-                </div>
-                <ul class="course-card-inf">
-                    <li>5 уроков</li>
-                    <li>2 часа</li>
-                    <li id="last">Подробнее</li>
-                </ul>
-            </div>
-            <div class="course w3-container w3-display-container w3-round w3-mobile">
-                <div class="course-card w3-border-bottom">
-                   <img src="img/icon/getting-start.png" alt="">
-                    <span id="text">
-                        <a href="">С чего начать</a>
-                        <p>Недавно создали канал? Пройдите этот курс и узнайте, как добиться успеха на YouTube.
-                        Войдите в свой аккаунт, изучите все доступные уроки, а затем сдайте итоговый тест. Необходимо правильно ответить как минимум на 75% вопросов.
-                        </p>
-                    </span>
-                </div>
-                <ul class="course-card-inf">
-                    <li>5 уроков</li>
-                    <li>2 часа</li>
-                    <li id="last">Подробнее</li>
-                </ul>
-            </div>
-            <div class="course w3-container w3-display-container w3-round w3-mobile">
-                <div class="course-card w3-border-bottom">
-                   <img src="img/icon/getting-start.png" alt="">
-                    <span id="text">
-                        <a href="">С чего начать</a>
-                        <p>Недавно создали канал? Пройдите этот курс и узнайте, как добиться успеха на YouTube.
-                        Войдите в свой аккаунт, изучите все доступные уроки, а затем сдайте итоговый тест. Необходимо правильно ответить как минимум на 75% вопросов.
+                        <a href="">Продвижение канала</a>
+                        <p>знайте, как оптимизировать метаданные, чтобы зрителям было проще находить ваши видео, и увеличить время просмотра благодаря эффективной рекламе и сотрудничеству с другими авторами. Необходимо правильно ответить как минимум на 75% вопросов.
                         </p>
                     </span>
                 </div>
@@ -263,5 +236,7 @@
 			</ul>	
 		</div>
 	</footer>
+	<script src="js/slider.js"></script>
+	<script src="js/slider_animate.js"></script>
 </body>
 </html>

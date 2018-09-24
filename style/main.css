@@ -198,73 +198,6 @@ footer {
 
 /* Catalog.html */
 /* Section Catalog */
-/* Radio Buttons */
-.control {
-    display: block;
-    position: relative;
-    padding-left: 17%;
-    margin-bottom: 5px;
-    padding-top: 3px;
-    cursor: pointer;
-    font-size: 14px;
-    color: black;
-}
-    .control input {
-        position: absolute;
-        z-index: -1;
-        opacity: 0;
-    }
-.control_indicator {
-    position: absolute;
-    top: 2px;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background: #ffffff;
-    border: 1px dashed #000000;
-}
-.control-radio .control_indicator {
-    border-radius: 19%;
-}
-
-.control:hover input ~ .control_indicator,
-.control input:focus ~ .control_indicator {
-    background: #ffffff;
-}
-
-.control input:checked ~ .control_indicator {
-    background: #ffffff;
-}
-.control:hover input:not([disabled]):checked ~ .control_indicator,
-.control input:checked:focus ~ .control_indicator {
-    background: #ffffff;
-}
-.control input:disabled ~ .control_indicator {
-    background: #ffffff;
-    opacity: 2;
-    pointer-events: none;
-}
-.control_indicator:after {
-    box-sizing: unset;
-    content: '';
-    position: absolute;
-    display: none;
-}
-.control input:checked ~ .control_indicator:after {
-    display: block;
-}
-.control-radio .control_indicator:after {
-    left: 6px;
-    top: 6px;
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    background: #000000;
-}
-.control-radio input:disabled ~ .control_indicator:after {
-    background: #ffffff;
-}
-/* End Radio Buttons */
 
 #catalog {
     background: #eee;
@@ -281,6 +214,7 @@ footer {
 @media only screen and (min-width: 1024px) {
     .c-menu {
         display: inline-block;
+        padding-bottom: 8%;
     }
 }
 
@@ -374,3 +308,171 @@ footer {
     color: red;
 }
 /* End Catalog */
+/* Start Course Page */
+/* Start course menu */
+/* Slider */
+.accordion {
+    background: inherit;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 18px;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+
+.accordion:after {
+    font-family: FontAwesome;
+    content: '\2796';
+    /* Unicode character for "plus" sign (-) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\02795"; /* Unicode character for "minus" sign (+) */
+}
+
+.panel {
+    padding: 0 18px;
+    overflow: hidden;
+}
+/* End slider */
+/* Input 'Radio' style */
+.control {
+            font-family: arial;
+            display: block;
+            position: relative;
+            padding-left: 29px;
+            margin-bottom: 5px;
+            padding-top: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+            .control input {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+            }
+        .control_indicator {
+            position: absolute;
+            top: 3px;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background: #e6e6e6;
+            border: 0px solid #b3b3b3;
+        }
+        .control-radio .control_indicator {
+            border-radius: 50%;
+        }
+        
+        .control:hover input ~ .control_indicator,
+        .control input:focus ~ .control_indicator {
+            background: #cccccc;
+        }
+        
+        .control input:checked ~ .control_indicator {
+            background: #2b9dd3;
+        }
+        .control:hover input:not([disabled]):checked ~ .control_indicator,
+        .control input:checked:focus ~ .control_indicator {
+            background: #0e6647d;
+        }
+        .control input:disabled ~ .control_indicator {
+            background: #e6e6e6;
+            opacity: 17;
+            pointer-events: none;
+        }
+        .control_indicator:after {
+            box-sizing: unset;
+            content: '';
+            position: absolute;
+            display: none;
+        }
+        .control input:checked ~ .control_indicator:after {
+            display: block;
+        }
+        .control-radio .control_indicator:after {
+            left: 7px;
+            top: 7px;
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background: #ffffff;
+        }
+        .control-radio input:disabled ~ .control_indicator:after {
+            background: #7b7b7b;
+        }
+/* End input style */
+.c-menu {
+    margin-left: 5%;
+    width: 14%;
+    display: inline-block;
+}
+
+.c-menu li {
+    color: black;
+    list-style-type: none;
+}
+
+.c-menu li a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.over-title {
+    display: block;
+    color: grey;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#first-el {
+    font-size: 16px;
+}
+
+#first-el img {
+    width: 30%;
+}
+
+#exam a {
+    color: gray;
+}
+/* End course menu */
+@media (max-width: 600px) {
+	.c-content {
+		width: 100%;
+	}
+    .c-menu {
+        margin: 0px;
+        
+    }
+}
+@media (min-width: 1024px) {
+	.c-content {
+		width: 64%;
+	}
+}
+/* Start course content */
+#course_page {
+    background: #eee;
+}
+
+.course-m {
+    background: white;
+    width: 15%;
+    margin-left: 10%;
+}
+
+.filters {
+    list-style: none;
+    padding-left: 10px;
+}
+/* End course content
+/* End course */
