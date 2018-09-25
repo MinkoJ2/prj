@@ -4,6 +4,7 @@
 
 body {
 	color: #757575;
+overflow-x: hidden;
 }
 
 html {
@@ -280,12 +281,6 @@ footer {
 
 }
 
-@media screen and (min-width: 1200px) {
-	.course-card #text {
-	width: 79%;
-	}
-}
-
 .course a {
     padding-bottom: 0;
     vertical-align: top;
@@ -481,4 +476,104 @@ footer {
     padding-left: 10px;
 }
 /* End course content
+/* Course Page menu */
+#course-page {
+    background: white;
+}
+
+.course-m {
+    padding: 10px 0px!important;
+    margin-left: 15%;
+    margin-right: 2%;
+    margin-top: 1%;
+    color: black;
+    width: 13%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.course-m img {
+    max-width: 74px;
+}
+
+.course-m #title span{
+    margin-left: 5%;
+    vertical-align: middle;
+} 
+
+.course-m li {
+    list-style-type: none;
+    padding: 10px 0px;
+}
+
+.course-m span {
+    color: #a6a6a6;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.course-m a{
+    display: block;
+    color: black;
+    font-size: 14px;
+    text-transform: none;
+}
+
+.course-m exam {
+    color: #a6a6a6;
+}
+/* End */
+/* Course page content */
+.page-main-c {
+    padding: 16px;
+    color: black;
+    width: 65%;
+    display: inline-block;
+}
+
+.page-c {
+    margin-left: 7%;
+    margin-top: 1%;
+    width: 66%;
+}
+
+.page-c li {
+    vertical-align: top;
+    display: inline-block;
+    width: 45%;
+    margin-bottom: 3%;
+    margin-right: 3%;
+}
+
+.page-c li span {
+    color: #a6a6a6;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.page-c li a {
+    font-size: 16px;
+    display: block;
+}
+
+.page-c li a:hover {
+    text-decoration: underline;
+}
+
+.page-c #button {
+    margin-left: 25%;
+}
+
+@media screen and (max-width: 600px) {
+    .hide {
+        display: none;
+    }
+    .page-c {
+        width: auto;
+        margin: 0;
+    }
+}
+/* End */
 /* End course */
