@@ -308,11 +308,8 @@ footer {
     text-transform: uppercase;
     color: red;
 }
-/* End Catalog */
-/* Start Course Page */
-/* Start course menu */
-/* Slider */
-.accordion {
+/* Catalog Menu */
+.c-slider {
     background: inherit;
     color: black;
     font-weight: 500;
@@ -325,7 +322,43 @@ footer {
     outline: none;
 }
 
-.accordion:after {
+.c-slider:after {
+    font-family: FontAwesome;
+    content: '\2796';
+    /* Unicode character for "plus" sign (-) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\02795"; /* Unicode character for "minus" sign (+) */
+}
+
+.c-panel {
+    padding: 0 18px;
+    overflow: hidden;
+}
+/* End Catalog menu */
+/* End Catalog */
+/* Start Course Page */
+/* Start course menu */
+/* Slider */
+.slider {
+    background: inherit;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 18px;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+
+.slider:after {
     font-family: FontAwesome;
     content: '\2796';
     /* Unicode character for "plus" sign (-) */
@@ -541,9 +574,12 @@ footer {
 .page-c li {
     vertical-align: top;
     display: inline-block;
-    width: 45%;
     margin-bottom: 3%;
     margin-right: 3%;
+}
+
+.page-c #themes li{
+    width: 45%;
 }
 
 .page-c li span {
@@ -575,5 +611,119 @@ footer {
         margin: 0;
     }
 }
+
+.page-p-icon {
+    color: grey;
+}
+
+.page-p-icon li {
+    width: 10%;
+    display: inline-block;
+    margin-left: 20px;
+}
 /* End */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    color: black;
+    padding: 18px 0px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.accordion i {
+    font-size: 16px;
+    color: #ffab00;
+    margin-right: 1%;
+}
+
+.accordion:after {
+    background: white;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0px 18px;
+    margin-bottom: 10px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.panel p {
+    margin-top: 0;
+}
+
+.panel ul {
+    padding-left: 10px;
+}
+
+#example li {
+    display: inline-block;
+    width: 46%;
+}
+
+#example a {
+    color: blue;
+    padding: 10px 0;
+}
+
+.advice {
+    font-size: 14px;
+    width: 40%;
+}
+
+.advice hr {
+    border-top: 1px solid lightgrey;
+    margin: 10px 0;
+}
+
+.advice-ul {
+    padding: 0;
+}
+
+.advice-ul li {
+    margin-right: 0px;
+    display: list-item;
+    list-style-position: inside;
+}
+
+.m-third {
+    width: 30%;
+    display: inline-block;
+    float: right;
+}
+
+.w3-twothird li{
+    display: list-item;
+    list-style-position: inside;
+}
+
+.practice {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.practice h3 hr {
+    border-top: 1px solid lightgrey;
+    margin: 10px 0;
+}
+
+.practice p {
+    margin-top: 0;
+}
+
+.practice-box {
+    border: 1px solid lightgrey;
+    width: 239px;
+    font-size: 14px;
+    color: grey;
+    padding-bottom: 81px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
 /* End course */
